@@ -1,28 +1,8 @@
 --	#textdomain wesnoth-The_Barbaric_North
 --	
 --	Lua snippets for The Barbaric North
---	
---	Lua dependencies
 
 local _ = wesnoth.textdomain "wesnoth-The_Barbaric_North"
-
---[[	
-	[limit_recruits]
-	Replacement for the LIMIT_RECRUIT and LIMIT_CONTEMPORANEOUS_RECRUITS macros
-	
-	Use in WML:
-	[event]
-		name = recruit,side turn
-	
-		[limit_recruits]
-			# SUF, don't use a [filter] tag
-			value = # number of limited recruits
-			cumulative = # whether the total units should be cumulative or not
-			# LIMIT_RECRUITS is cumulative, LIMIT_CONTEMPORANEOUS_RECRUITS is not
-			# default is no
-		[/limit_recruits]
-	[/event]
---]]
 
 function wml_actions.limit_recruits(cfg)
 	local value = tonumber(cfg.value) or helper.wml_error("Missing or wrong required 'value' attribute in [limit_recruits]")
@@ -40,8 +20,6 @@ function wml_actions.limit_recruits(cfg)
 		end
 	end
 end
-
---	Frostbite status
 
 function wml_actions.frostbite_event(cfg)
 	if fire_event then
