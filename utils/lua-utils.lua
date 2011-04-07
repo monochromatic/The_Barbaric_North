@@ -50,7 +50,7 @@ function wml_actions.frostbite_event(cfg)
 		for index, unit in ipairs(frostbite_units) do
 			frostbite_units.status.frostbite = "true"
 			frostbite_units.moves = math.floor(frostbite_units.max_moves / 2)
-			wesnoth.float_label(unit.x, unit.y, _"<span color='grey'>frostbite</span>")
+			wesnoth.float_label(unit.x, unit.y, "<span color='grey'>" .. "frostbite" .. "</span>")
 			units_with_frostbite = yes
 		end
 		if units_with_frostbite then wesnoth.play_sound "entangle.wav" ; units_with_frostbite = nil end
@@ -58,7 +58,7 @@ function wml_actions.frostbite_event(cfg)
 		for index, unit in ipair(unfrostbite_units) do
 			if unfrostbite_units.status.frostbite then
 				unfrostbite_units.status.frostbite = nil
-				wesnoth.float_label(unit.x, unit.y, _"<span color='green'>healed</span>")
+				wesnoth.float_label(unit.x, unit.y, "<span color='green'>" .. _"healed" .. "</span>")
 			end
 		end
 	end
