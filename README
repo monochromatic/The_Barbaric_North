@@ -1,0 +1,11 @@
+Welcome to The Barbaric North, a single-player campaign aimed for mainline inclusion in the widely-appraised game The Battle for Wesnoth.
+
+Prerequisites:
+	> Make sure you have the latest development version of the Battle for Wesnoth: http://www.wesnoth.org. Currently (as of 4.6.2011), it is 1.9.5. Using a compiled copy of the source code from subversion is always a good idea. 
+	> Download the Wesnoth Lua Pack from the development add-on server or from the Wesnoth-UMC-dev repository: http://wesnoth-umc-dev.ai0867.net/
+
+If installing from github, make sure it is installed in the correct place. Please refer to http://wiki.wesnoth.org/EditingWesnoth#Where_is_my_user_data_directory.3F to know where the userdata directory is on your OS. From there, install it in ~/data/add-ons/.
+
+If you would like to contribute, The Barbaric North is written, like the majority of all Wesnoth UMC campaigns, in the Wesnoth Markup Language (WML). A full reference to the language can be found here: http://wiki.wesnoth.org/ReferenceWML. Also, The Barbaric North utilizes Lua for complex utilities and events for the campaign. Message me on the forums or email me at elvish.sovereign@gmail.com for further info.
+
+If you got all that, you're ready to go!
