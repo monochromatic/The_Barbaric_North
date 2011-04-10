@@ -1,0 +1,36 @@
+The Barbaric North Changelog
+
+Current Wesnoth version(s) supported: 1.9.5+
+Current TBN stable: N/A
+Current maintainer(s): monochromatic
+Code currently hosted at https://github.com/monochromatic/The-Barbaric-North
+
+TODO:
+> Randomize the placement of the leaders in scenario one.
+> Fix the role.role = Supporter issue in scenario three.
+> Balance the spawns in scenario five.
+
+-----
+
+0.7.2
+> Complete internal rewrite
+	> Introduced Lua into The Barbaric North
+	> Code is now hosted at github!
+> Dire Situations:
+	> Added a flee event for units < 10hp
+> A Common Enemy:
+	> Added a frostbite event
+	> Made the scenario slightly easier
+> First-Rate Banditry:
+	> New scenario
+> Updated story and dialogue throughout
+> Various bugfixes
+
+0.7.1
+> Balancing:
+	> Randomized the placement of the ambush units in scenario one
+	> Kept the level of units in scenario one to level one
+	> Drastically reduced the amount of enemy gold in scenario two
+	> Increased the turn limit in scenario three from 34 32 30 to 38 36 34
+> A Common Enemy:
+	> Updated dialogue and scenario events
