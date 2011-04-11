@@ -65,16 +65,17 @@ end
 function wml_actions.spawn_units(cfg)
 	if cfg.fire_event then
 		local side_two = wesnoth.get_units { side = 2 }
+		if not side_two then side_two = 0 end
 		local units_placed = #side_two
-		local possible_locs = wesnoth.get_locations { x = 31-38 , y = 1-7 }
+		local possible_locs = wesnoth.get_locations { x = 31-38 , y = 1-7 , { "filter" , { }}}
 		
 		if turn_number < 10 then number_of_units = 15
 		elseif turn_number < 20 then number_of_units = 20
 		elseif turn_number >= 21 then number_of_units = 30
 		end
 		
-		while units_placed <= number_of_units do
-			local rand_index = math.random(1, #possible_locs)
+		while units_placed < number_of_units do
+			local rand_index = helper.rand('1..' .. #possible_locs)
 			wesnoth.put_unit(possible_locs[rand_index][1], possible_locs[rand_index][2], { type = helper.rand("Bowman,Javelineer,Longbowman,Mage,Pikeman,Red Mage,Spearman,Spearman,Swordsman,Swordsman") })
 			table.remove(possible_locs, rand_index)
 			units_placed = units_placed + 1

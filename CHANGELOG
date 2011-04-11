@@ -7,8 +7,9 @@ Code currently hosted at https://github.com/monochromatic/The-Barbaric-North
 
 TODO:
 > Randomize the placement of the leaders in scenario one.
-> Fix the role.role = Supporter issue in scenario three.
-> Balance the spawns in scenario five.
+> Fix the role.role = Supporter issue in scenario four.
+> Add story in scenario five.
+> Fix the spawn error in scenario five.
 
 -----
 
